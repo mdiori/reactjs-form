@@ -1,0 +1,36 @@
+// Colors
+$blue1: #237ebb;
+$blue2: #206bb0;
+$blue3: #165b9d;
+$blue4: #045192;
+$blue5: #004385;
+$blue6: #06336c;
+$background: #045192;
+/* Chrome 10-25, Safari 5.1-6 */
+$background: -webkit-linear-gradient(
+  to bottom,
+  $blue1,
+  $blue2,
+  $blue3,
+  $blue4,
+  $blue5,
+  $blue6
+);
+/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+$background: linear-gradient(
+  to bottom,
+  $blue1,
+  $blue2,
+  $blue3,
+  $blue4,
+  $blue5,
+  $blue6
+);
+$overlay: #00000070;
+$lightBlue: #f0f8ff;
+$white: #fff;
+$red: red;
+
+// z-indexes
+$overlayZindex: 4;
+$modalZindex: 5;

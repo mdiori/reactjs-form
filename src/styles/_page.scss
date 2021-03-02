@@ -1,0 +1,69 @@
+.page {
+  width: 80%;
+  height: 600px;
+  margin: calc((100vh - (600px)) / 2) auto;
+  background-color: #f0f8ff;
+  border-radius: 15px;
+  overflow: hidden;
+
+  .actions {
+    padding: 15px;
+    padding-bottom: 5px;
+    display: grid;
+    position: relative;
+    flex-direction: column;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr;
+
+    @include breakpoint-up(medium) {
+      grid-template-rows: 1fr;
+      grid-template-columns: 3fr 1fr;
+      &__add {
+        grid-column: 3/4;
+        margin-top: 18px;
+      }
+
+      &__search {
+        grid-row: 1/2;
+        grid-column: 1/2;
+      }
+    }
+
+    @include breakpoint-up(large) {
+      grid-template-columns: 3fr 2fr 1fr;
+    }
+
+    &__add {
+      grid-row: 1/2;
+
+      button {
+        display: block;
+        width: 100%;
+      }
+    }
+
+    &__search {
+      display: flex;
+      height: 50px;
+      .cpf,
+      .name {
+        padding-top: 22px;
+      }
+      .cpf {
+        margin-right: 10px;
+      }
+    }
+  }
+
+  .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: $overlayZindex;
+    background-color: $overlay;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+}

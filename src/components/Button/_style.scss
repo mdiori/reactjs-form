@@ -1,0 +1,15 @@
+.add-user {
+  &.btn {
+    button {
+      font-family: inherit;
+      font-size: 0.8125em;
+      background-color: $blue2;
+      border: 1px solid $blue2;
+      border-radius: 5px;
+      color: $white;
+      padding: 5px;
+      text-align: center;
+      text-decoration: none;
+    }
+  }
+}
